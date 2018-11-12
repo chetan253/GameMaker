@@ -1,0 +1,5 @@
+[DEBUG] 2018-10-11 10:41:59.672 [AWT-EventQueue-0] WindowFrame - WindowFrame constructed
+[DEBUG] 2018-10-11 10:41:59.675 [AWT-EventQueue-0] MainPanel - MainPanel constructed
+[DEBUG] 2018-10-11 10:41:59.677 [AWT-EventQueue-0] FormPanel - FormPanel constructed
+[DEBUG] 2018-10-11 10:41:59.682 [AWT-EventQueue-0] GamePanel - GamePanel constructed
+[DEBUG] 2018-10-11 10:42:25.426 [main] WindowFrame - WindowFrame constructed
