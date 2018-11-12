@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="jumbotron text-center">
+    <h1>Welcome to Game Maker</h1>
+    <h2>OOSD Assignment 6</h2>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Game Maker</h2>
+            <p>Make your own games, simulate and play</p>
+            <a href="http://localhost:8080/gamemaker.jnlp">
+                <button type="button">Launch Game Maker</button>
+            </a>
+        </div>
+        <div class="col-sm-6">
+            <h2>Game Play</h2>
+            <p>Play the already created games</p>
+            <a href="http://localhost:8080/gameplayer.jnlp">
+                <button type="button">Launch Game Play</button>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2>Score Board</h2>
+    
+   <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Player Name</th>
+            <th>Game Id</th>
+            <th>Score</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr th:each="score : ${scoreList}">
+                <td th:text="${score.userName}"></td>
+                <td th:text="${score.gameId}"></td>
+                <td th:text="${score.score}"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
